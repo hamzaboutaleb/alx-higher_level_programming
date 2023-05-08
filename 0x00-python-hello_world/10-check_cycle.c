@@ -23,4 +23,5 @@ int check_cycle(listint_t *list)
 		else
 			return (0);
 	} while (fast);
+	return (0);
 }
