@@ -24,6 +24,6 @@ int check_cycle(listint_t *list)
 
 		if (slow == fast)
 			return (1);
-	} while (fast);
+	} while (fast && slow);
 	return (0);
 }
