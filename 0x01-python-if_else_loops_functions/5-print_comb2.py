@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-for i in range(0, 100):
-    print("{0:0=2d}".format(i), end="")
-    if i != 99:
-        print(", ", end="")
+for i in range(0, 99):
+    print("{0:0=2d}, ".format(i), end="")
+print("{}".format(99))
