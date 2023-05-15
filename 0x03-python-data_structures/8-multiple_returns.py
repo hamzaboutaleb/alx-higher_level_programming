@@ -1,4 +1,4 @@
-#!/use/bin/pyhton3
+#!/use/bin/python3
 
 def multiple_returns(sentence):
     if sentence != "":
