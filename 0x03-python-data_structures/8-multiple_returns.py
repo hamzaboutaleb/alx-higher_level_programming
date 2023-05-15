@@ -6,3 +6,4 @@ def multiple_returns(sentence):
     else:
         c = None
     return (len(sentence), c)
+    
