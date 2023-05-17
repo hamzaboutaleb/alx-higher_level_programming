@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
             continue
         new_list.append(el)
         visited.add(el)
-    new_list
+    return new_list
