@@ -7,8 +7,8 @@ def best_score(a_dictionary):
     keys = list(a_dictionary.keys())
     max_val = a_dictionary.get(keys[0])
     key = keys[0]
-    for k in a_dictionary:
-        if a_dictionary[k] > max_val:
-            max_val = a_dictionary[k]
+    for k, v in a_dictionary.items():
+        if v > max_val:
+            max_val = v
             key = k
-    return k
+    return key
