@@ -6,7 +6,8 @@
 class Square:
     """square class"""
     def __init__(self, size):
-        """
+        """Constructor
+
         Args:
             size: size of square
         """
