@@ -24,9 +24,7 @@ class Square:
 
     @property
     def size(self):
-        """ propert for the size.
-           
-        """
+        """ propert for the size"""
         return size
 
     @size.setter
