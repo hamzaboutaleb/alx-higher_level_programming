@@ -24,7 +24,11 @@ class Square:
 
     @property
     def size(self):
-        """ propert for the size"""
+        """ propert for the size
+                Raises:
+                    TypeError: size is not integer.
+                    ValueError: if size less than 0.
+        """
         return size
 
     @size.setter
