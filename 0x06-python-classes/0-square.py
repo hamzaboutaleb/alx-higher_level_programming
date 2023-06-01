@@ -1,4 +1,4 @@
-#!/usr/bin/pyhton
+#!/usr/bin/python3
 
 class Square:
     pass
