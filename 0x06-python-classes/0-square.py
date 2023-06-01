@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
-"""Square module."""
+"""Square module"""
 
 
 class Square:
     "Square class"
-    def __init__():
-        pass
