@@ -15,6 +15,8 @@ class Rectangle:
         Args:
             width (int): width of rectangle.
             height (int): height of rectangle.
+        Raises:
+            TypeError: rect_1 or rect_2 not instance of Rectangle
         """
         self.width = width
         self.height = height
