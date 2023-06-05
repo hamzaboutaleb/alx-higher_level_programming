@@ -7,7 +7,7 @@ Rectangle class module
 class Rectangle:
     """ Rectangle class"""
     def __init__(self, width=0, height=0):
-        """Init Rectangle class
+        """Init Rectangle class.
         Args:
             width (int): width of rectangle
             height (int): height of rectangle
@@ -17,7 +17,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get width"""
+        """Get width."""
         return self.__width
 
     @width.setter
@@ -30,7 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get height"""
+        """Get height."""
         return self.__height
 
     @height.setter
