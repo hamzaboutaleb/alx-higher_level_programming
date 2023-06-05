@@ -7,6 +7,11 @@ Rectangle class module
 class Rectangle:
     """ Rectangle class"""
     def __init__(self, width=0, height=0):
+        """Init Rectangle class
+        Args:
+            width: width of rectangle
+            height: height of rectangle
+        """
         self.width = width
         self.height = height
 
