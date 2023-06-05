@@ -5,7 +5,7 @@ Rectangle class module
 
 
 class Rectangle:
-    number_of_instance = 0
+    number_of_instances = 0
     """Rectangle class"""
     def __init__(self, width=0, height=0):
         """Init Rectangle class.
@@ -15,7 +15,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        Rectangle.number_of_instance += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -64,5 +64,5 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.width, self.height)
 
     def __del__(self):
-        Rectangle.number_of_instance -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
