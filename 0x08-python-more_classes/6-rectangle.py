@@ -5,8 +5,9 @@ Rectangle class module
 
 
 class Rectangle:
-    number_of_instances = 0
     """Rectangle class"""
+
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """Init Rectangle class.
         Args:
