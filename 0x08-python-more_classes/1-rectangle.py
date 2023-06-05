@@ -9,8 +9,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Init Rectangle class
         Args:
-            width: width of rectangle
-            height: height of rectangle
+            width (int): width of rectangle
+            height (int): height of rectangle
         """
         self.width = width
         self.height = height
