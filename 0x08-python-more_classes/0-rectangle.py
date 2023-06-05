@@ -5,5 +5,4 @@ Rectangle class
 
 
 class Rectangle:
-    """ EMPTY CLASS """
     pass
