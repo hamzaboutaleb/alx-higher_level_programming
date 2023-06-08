@@ -19,13 +19,13 @@
 >>> add_integer(-5.4, 10.9)
 5
 
->>> add_integer(5, 10.9)
+>>> add_integer(5, "10.9")
 Traceback (most recent call last):
   ...
     raise TypeError("b mus be an integer")
 TypeError: b mus be an integer
 
->>> add_integer(5.0, 10)
+>>> add_integer("5", 10)
 Traceback (most recent call last):
   ...
     raise TypeError("a must be an integer")
