@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""say my name module"""
+
 
 def say_my_name(first_name, last_name=""):
     """print my name firstname last name.
@@ -15,4 +17,4 @@ def say_my_name(first_name, last_name=""):
     if last_name != "":
         print("My name is {} {}".format(first_name, last_name))
     else:
-        print("My name is {}".format(first_name))
+        print("My name is {} ".format(first_name))
