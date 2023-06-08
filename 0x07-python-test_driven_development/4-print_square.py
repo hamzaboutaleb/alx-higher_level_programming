@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+""" print squre module """
+
 
 def print_square(size):
     """print square size
         Args:
             size (int): size of square
         Raises:
-            TypeError: if size is not int   
+            TypeError: if size is not int
             ValueError: if size negative
     """
     if not isinstance(size, int):
