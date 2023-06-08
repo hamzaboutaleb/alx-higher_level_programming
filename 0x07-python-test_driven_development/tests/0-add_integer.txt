@@ -23,7 +23,7 @@
 Traceback (most recent call last):
   ...
     raise TypeError("b mus be an integer")
-TypeError: b must be an integer
+TypeError: b mus be an integer
 
 >>> add_integer("5", 10)
 Traceback (most recent call last):
