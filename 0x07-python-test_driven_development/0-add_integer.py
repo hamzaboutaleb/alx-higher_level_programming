@@ -10,10 +10,10 @@ def add_integer(a, b=98):
         Raises:
             TypeError: if not both same type
     """
-    if isinstance(a, int) and not isinstance(b, int):
-        raise TypeError("b must be an integer")
-    if not isinstance(a, int) and isinstance(b, int):
+    if not isinstance(a, int) and not isinstance(b, float):
         raise TypeError("a must be an integer")
+    if not isinstance(a, float) and isinstance(b, int):
+        raise TypeError("b must be an integer")
     if not isinstance(a, int):
         a = int(a)
     if not isinstance(b, int):
