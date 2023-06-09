@@ -29,6 +29,13 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_float(self):
         """test for float number list"""
         self.assertEqual(max_integer([15.6, 19.2, 20.0]), 20.0)
- 
+    def test_negative(self):
+        self.assertEqual(max_integer([-1, -5, -6]), -1)
+
+    def test_one_negative(self):
+       self.assertEqual(max_integer([10, 18, -5, 6]), 18) 
+
+    def test_one_elem(self):
+        self.assertEqual(max_integer([5]), 5)
 if __name__ == "__main__":
     unittest.main()
