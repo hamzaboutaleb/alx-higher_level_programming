@@ -3,5 +3,5 @@
 """lookup function module"""
 
 def lookup(obj):
-	"""return the list of available attribute"""
-	return dir(obj)
+    """return the list of available attribute"""
+    return dir(obj)
