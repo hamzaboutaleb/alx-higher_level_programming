@@ -2,7 +2,7 @@
 """Mylist module"""
 
 
-class MyList:
+class MyList(list):
     """Mylist class"""
 
     def print_sorted(self):
