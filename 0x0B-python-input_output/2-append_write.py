@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """file append module"""
 
+
 def append_write(filename="", text=""):
     """append to file
         Args:
