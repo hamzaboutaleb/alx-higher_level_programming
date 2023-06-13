@@ -11,6 +11,6 @@ class Student:
         self.last_name = l_n
         self.age = age
 
-    def to_json():
+    def to_json(self):
 
         return self.__dict__
