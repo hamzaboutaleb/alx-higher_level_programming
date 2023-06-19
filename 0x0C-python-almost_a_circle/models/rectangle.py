@@ -91,8 +91,12 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
-    def update(self, *args):
+    def update(self, *args, **kargs):
         """ update class args """ 
+        if kargs:
+            for key, value in kwargs.items():
+                self.__setattr(key, value)
+            return
         try:
             self.id = args[0]
             self.width = args[1]
