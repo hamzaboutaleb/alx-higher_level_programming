@@ -21,5 +21,5 @@ class Base:
     @staticmethod
     def to_json_string(list_dict):
         if list_dict == None or len(list_dict) == 0:
-            return []
+            return "[]"
         return json.dumps(list_dict)
