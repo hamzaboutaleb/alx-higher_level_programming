@@ -93,9 +93,9 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ update class args """ 
-        if len(args) == 0:
+        if kwargs:
             for key, value in kwargs.items():
-                self.__setattr(key, value)
+                self.__setattr__(key, value)
             return
         try:
             self.id = args[0]
