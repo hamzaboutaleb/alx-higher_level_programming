@@ -11,7 +11,7 @@ class Base:
         """class base init function
             Args:
                 id (int): id
-        """"
+        """
         if id != None:
             self.id = id
         else:
