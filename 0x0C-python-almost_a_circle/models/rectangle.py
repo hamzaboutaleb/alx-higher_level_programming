@@ -92,6 +92,7 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def to_dictionary(self):
+        """ return dict of rectangle class """
         return {
             "id": self.id,
             "width": self.width,
