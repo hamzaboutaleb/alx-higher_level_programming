@@ -2,7 +2,7 @@
 """rectangle class module"""
 
 
-from modesl.base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -17,6 +17,7 @@ class Rectangle(Base):
             y: position y
             id : id of rectangle
         """
+        super().__init__(id)
 
         self.__width = width
         self.__height = height
