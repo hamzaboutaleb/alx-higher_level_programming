@@ -92,7 +92,7 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def update(self, *args):
-       """ update class args""" 
+        """ update class args """ 
         try:
             self.id = args[0]
             self.width = args[1]
