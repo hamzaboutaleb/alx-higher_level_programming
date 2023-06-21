@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """base class Test module"""
 
 import unittest
@@ -13,7 +13,7 @@ class TestBaseClass(unittest.TestCase):
     
     def test_with_id(self):
         b = Base(15)
-        self.assertEqual(base.id, 15)
+        self.assertEqual(b.id, 15)
 
 
 if __name__ == "__main__":
