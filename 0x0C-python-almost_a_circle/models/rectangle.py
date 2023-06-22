@@ -27,7 +27,7 @@ class Rectangle(Base):
     @property
     def width(self):
         return self.__width
-    
+
     @width.setter
     def width(self, val):
         if type(val) != int:
@@ -62,7 +62,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        return self.__y;
+        return self.__y
 
     @y.setter
     def y(self, val):
@@ -82,7 +82,8 @@ class Rectangle(Base):
             print("#" * self.width)
 
     def __str__(self):
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}"
+        .format(self.id, self.x, self.y, self.width, self.height)
 
     def display(self):
         """ display rectangle width height and x y """
