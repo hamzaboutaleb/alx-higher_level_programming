@@ -103,7 +103,7 @@ class Rectangle(Base):
         }
 
     def update(self, *args, **kwargs):
-        """ update class args """ 
+        """ update class args """
         if len(args) == 0:
             for key, value in kwargs.items():
                 self.__setattr__(key, value)
