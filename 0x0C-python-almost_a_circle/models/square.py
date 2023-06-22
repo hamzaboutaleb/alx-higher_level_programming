@@ -12,6 +12,7 @@ class Square(Rectangle):
     @property
     def size(self):
         return self.width
+
     @size.setter
     def size(self, val):
         self.width = val
@@ -31,13 +32,17 @@ class Square(Rectangle):
             self.y = args[3]
         except IndexError:
             pass
+
     def to_dictionary(self):
         """ return dict of class square"""
+
         return {
-            "id" : self.id,
-            "size" : self.size,
-            "x" : self.x,
-            "y" : self.y
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
         }
+
     def __str__(self):
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
+        text = "[Square] ({}) {}/{} - {}"
+        return text.format(self.id, self.x, self.y, self.width)
