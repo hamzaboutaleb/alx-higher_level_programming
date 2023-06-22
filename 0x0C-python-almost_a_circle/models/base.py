@@ -13,13 +13,14 @@ class Base:
             Args:
                 id (int): id
         """
-        if id != None:
+        if id is not  None:
             self.id = id
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
     @staticmethod
     def to_json_string(list_dict):
-        if list_dict == None or len(list_dict) == 0:
+        if list_dict is None or len(list_dict) == 0:
             return "[]"
         return json.dumps(list_dict)
