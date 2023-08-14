@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const n = parseInt(process.argv[2]);
+const n = process.argv[2];
 
 console.log(fact(n));
 function fact(n) {
