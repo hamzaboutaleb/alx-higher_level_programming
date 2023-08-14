@@ -1,18 +1,22 @@
 #!/usr/bin/node
-const argv = process.argv;
-let max = 0, max2 = 2;
-if (argv.length <= 3) {
-  console.log(0);
-} else {
-  max = 2;
 
-  for (let i = 3; i < argv.length; i++) {
-    let num = parseInt(argv[i]);
-    if (num > argv[max]) max = i;
+function second (array) {
+  if (array.length <= 3) {
+    return (0);
   }
-  for (let i = 2; i < argv.length; i++) {
-    let num = parseInt(argv[i]);
-    if (num > argv[max2] && i != max) max2 = i;
+
+  let max = array[2];
+  let secondMax = array[3];
+
+  for (let i = 2; i < array.length; i++) {
+    if (array[i] > max) {
+      secondMax = max;
+      max = array[i];
+    } else if (array[i] > secondMax && array[i] < max) {
+      secondMax = array[i];
+    }
   }
-  console.log(argv[max2]);
+  return (secondMax);
 }
+
+console.log(second(process.argv));
