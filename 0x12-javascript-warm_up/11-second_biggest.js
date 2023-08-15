@@ -5,18 +5,21 @@ function second (array) {
     return (0);
   }
 
-  let max = array[2];
-  let secondMax = array[3];
+  let max = 2;
+  let secondMax = 3;
 
-  for (let i = 2; i < array.length; i++) {
-    if (array[i] > max) {
-      secondMax = max;
-      max = array[i];
-    } else if (array[i] > secondMax && array[i] < max) {
-      secondMax = array[i];
-    }
+  for (let i = 3; i < array.length; i++) {
+    const el = array[i];
+    const elMax = array[max];
+
+    if (el > elMax) max = i;
   }
-  return (secondMax);
+  for (let i = 3; i < array.length; i++) {
+    const el = array[i];
+    const elMax = array[secondMax];
+    if (el > elMax && max !== secondMax) secondMax = i;
+  }
+  return (array[secondMax]);
 }
 
 console.log(second(process.argv));
