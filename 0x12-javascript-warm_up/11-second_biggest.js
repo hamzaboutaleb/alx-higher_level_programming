@@ -6,7 +6,7 @@ function second (array) {
   }
 
   let max = 2;
-  let secondMax = 3;
+  let secondMax = 2;
 
   for (let i = 3; i < array.length; i++) {
     const el = array[i];
@@ -17,7 +17,7 @@ function second (array) {
   for (let i = 3; i < array.length; i++) {
     const el = array[i];
     const elMax = array[secondMax];
-    if (el > elMax && max !== secondMax) secondMax = i;
+    if (el > elMax && max !== i) secondMax = i;
   }
   return (array[secondMax]);
 }
