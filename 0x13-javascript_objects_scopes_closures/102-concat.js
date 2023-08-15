@@ -1,15 +1,11 @@
 #!/usr/bin/node
 
-const fs = require('fs').promises;
+const fs = require('fs');
 
 const fileA = process.argv[2];
 const fileB = process.argv[3];
 const fileC = process.argv[4];
 
-async function concat () {
-  const dataA = await fs.readFile('./' + fileA, 'utf8');
-  const dataB = await fs.readFile('./' + fileB, 'utf8');
-  await fs.writeFile(fileC, dataA + '\n' + dataB);
-}
-
-concat();
+const dataA =  fs.readFileSync('./' + fileA, 'utf8');
+const dataB =  fs.readFileSync('./' + fileB, 'utf8');
+fs.writeFileSync('./' + fileC, dataA + dataB);
