@@ -7,8 +7,8 @@ const fileB = process.argv[3];
 const fileC = process.argv[4];
 
 async function concat () {
-  const dataA = await fs.readFile(fileA, 'utf8');
-  const dataB = await fs.readFile(fileB, 'utf8');
+  const dataA = await fs.readFile('./' + fileA, 'utf8');
+  const dataB = await fs.readFile('./' + fileB, 'utf8');
   await fs.writeFile(fileC, dataA + '\n' + dataB);
 }
 
