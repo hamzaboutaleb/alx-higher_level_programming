@@ -8,8 +8,12 @@ module.exports = class Rectangle {
     }
   }
   print () {
-    let x = "";
-    for (let i = 0; i < w; i++) {x += "X";}
-    for (let i = 0; i < h; i++) {console.log(x);}
+    let x = '';
+    for (let i = 0; i < w; i++) {
+      x += 'X';
+    }
+    for (let i = 0; i < h; i++) {
+      console.log(x);
+    }
   }
 };
