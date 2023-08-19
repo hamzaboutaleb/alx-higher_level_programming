@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""script lists all states from databases hbtn_0e_0_usa"""
+
+
 import MySQLdb
 from sys import argv
-"""script lists all states from databases hbtn_0e_0_usa"""
 
 if __name__ == "__main__":
     user, pwd, db = argv[1], argv[2], argv[3]
