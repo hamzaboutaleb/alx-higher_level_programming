@@ -7,10 +7,7 @@ if __name__ == "__main__":
     user = argv[1]
     pwd = argv[2]
     db = argv[3]
-    con = MySQLdb.connect(
-        host="localhost", port=3306, user=user, password=pwd,
-        database=db
-        )
+    con = MySQLdb.connect(host="localhost", port=3306, user=user, password=pwd, database=db)
     cursor = con.cursor()
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
     data = cursor.fetchall()
