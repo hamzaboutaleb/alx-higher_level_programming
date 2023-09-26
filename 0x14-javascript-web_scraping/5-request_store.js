@@ -12,7 +12,6 @@ request(url, (err, resp, body) => {
   if (resp.statusCode !== 200) return console.log('Request failed');
 
   writeTo(filePath, body);
-
 });
 
 function writeTo (filePath, content) {
