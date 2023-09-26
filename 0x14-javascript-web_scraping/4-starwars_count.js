@@ -20,5 +20,6 @@ function countWedgeFilms (movies) {
     if (movie.characters.includes('https://swapi-api.alx-tools.com/api/people/18/')) return acc + 1;
     return acc;
   }, 0);
+
   return count;
 }
